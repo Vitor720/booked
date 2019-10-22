@@ -2,9 +2,11 @@
 
 Desafio proposto pela empresa Lemobs, aceito e concludio.
 
-Aplicativo utiliza arquitetura MVVM, inhjeção de dependencias com Kotlin Koin e consumo de API com Retrofit 2.6
+Aplicativo utiliza arquitetura MVVM, injeção de dependencias com Kotlin Koin e consumo de API com Retrofit 2.6
 
 Abaixo especificações do desafio
+
+
 
 
 Biblioteca Virtual
