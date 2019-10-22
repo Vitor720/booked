@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">booked</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bookImage">Imagem do livro</string>
+    <string name="bookName">Nome do Livro</string>
+    <string name="bookWriter">Escritor</string>
+    <string name="balance">Saldo: </string>
+    <string name="balanceMoney">R$ 100,00</string>
+    <string name="buyBooks">Comprar Livros</string>
+    <string name="bookPrice">Preço:</string>
+    <string name="purchaseButton">Comprar</string>
+    <string name="purchase">Comprar</string>
+    <string name="errorInternet">Verifique sua internet</string>
+    <string name="action_update_books">Atualizar Lista</string>
+</resources>

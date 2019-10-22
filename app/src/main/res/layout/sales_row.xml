@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lightGreen"
+    >
+
+
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/backgroundGreen"
+    android:layout_height="wrap_content"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="7dp"
+       >
+
+        <ImageView
+            android:id="@+id/SalesBookImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/salesBookName"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:text="@string/bookName"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/salesBookWriter"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/cardview_dark_background"
+            android:text="@string/bookWriter"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/salesBookPrice"
+            android:text="@string/bookPrice"
+            android:gravity="center"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:id="@+id/buyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/purchase"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+</layout>

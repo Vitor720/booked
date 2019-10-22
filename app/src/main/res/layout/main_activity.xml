@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.ddapps.booked.viewmodels.SalesViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:background="@color/backgroundGreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:background="@color/backgroundGreen"
+
+            android:id="@+id/navHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/balanceLayout"
+            android:layout_marginTop="5dp"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
+
+        <RelativeLayout
+            android:id="@+id/balanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGreen"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/balanceMoney"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@{viewModel.displayBalance()}"
+                android:textAlignment="center"
+                android:textColor="@color/lightGreen"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</layout>
